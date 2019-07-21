@@ -38,9 +38,12 @@ Ex: addKeyPowerIndex(arrOfObj2)
 ]   
 */
 
-function addKeyPowerIndex() {
-  // WRITE YOUR CODE UNDER THIS LINE  
-
+function addKeyPowerIndex(arr) {
+var newArray=[];
+arr.forEach((element) => {
+newArray.push(arr.a*2)
+});
+return  newArray;
 }
 
 
@@ -64,8 +67,13 @@ Ex: decreseBy(arrOfNum1,-6)
 => [83, 11, 39]
 */
 
-function decreseBy() {
-  // WRITE YOUR CODE UNDER THIS LINE 
+function decreseBy(arr,number) {
+  var newArray=[];
+  arr.map((total)=>{
+ total=total-number
+newArray.push(total)
+  })
+  return newArray;
 
 }
 
@@ -102,8 +110,13 @@ Ex: nameLongerThan(arrOfObj4,6)
 ]
 */
 
-function nameLongerThan() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function nameLongerThan(arr,number) {
+ var newArray=[]
+var result= arr.filter((value)=>{
+(value.length>number)
+ return newArray.push(value)
+ })
+return result;
 }
 
 
@@ -131,11 +144,14 @@ Ex: avgLength(arrOfObj4,"name")
 
 Ex: avgLength(arrOfObj4,"food")
 => 6.8
-*/
+*/ //hukj
 
-function avgLength() {
-  // WRITE YOUR CODE UNDER THIS LINE         
-
+function avgLength(arr,key) {
+ var newArray=[] 
+ var result=arr.reduce((total,value)=>{
+return total=arr.food.length/Object.keys().length
+ },0)      
+return result
 }
 
 // Good luck :)
